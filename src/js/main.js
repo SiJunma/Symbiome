@@ -58,18 +58,21 @@ $( document ).ready(function() {
     });
 
     var thumbnails = new Splide( '.product-gallery__slider-thumbs', {
-        perPage: 3,
         gap         : 10,
         rewind    : true,
         pagination: false,
         arrows    : false,
         rewind    : true,
         isNavigation: true,
+        fixedHeight: '150px',
+        fixedWidth: '150px',
 
         breakpoints: {
             991: {
                 direction   : 'ttb',
-                heightRatio : 3
+                height: '470px',
+                fixedHeight: '108px',
+                fixedWidth: '108px',
             },
         }
     });

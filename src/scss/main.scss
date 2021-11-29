@@ -843,7 +843,7 @@ h5 {
 .footer {
     background-color: #212429;
     color: #fff;
-    padding-top: 43px;
+    padding-top: 38px;
 
     .mpayments-list {
         @include flex-list();
@@ -858,6 +858,13 @@ h5 {
         }
     }
 
+    &__menu-box {
+        margin-bottom: 35px;
+        min-height: 38px;
+        display: flex;
+        align-items: center;
+    }
+
     &__mpayments {
         height: 100%;
         display: flex;
@@ -869,6 +876,7 @@ h5 {
 
         li {
             margin-right: 30px;
+            line-height: 100%;
 
             &:last-child {
                 margin-right: 0;
@@ -884,7 +892,7 @@ h5 {
     }
 
     &__brand {
-        margin-bottom: 30px;
+        margin-top: 5px;
     }
 
     &__link-social {
